@@ -7,7 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(student src/main.cpp)
 
-add_library(student_lib STATIC src/unique_ptr.cpp)
+add_library(student_lib STATIC src/unique_ptr.cpp
+    src/raw_pointer.cpp)
 
 target_include_directories(student PRIVATE ${PROJECT_SOURCE_DIR}/include)
 target_include_directories(student_lib PRIVATE ${PROJECT_SOURCE_DIR}/include)

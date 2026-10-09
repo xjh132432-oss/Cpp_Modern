@@ -1,8 +1,11 @@
-#include "unique_ptr.h"
+#include "ptr.h"
+#include<iostream>
 
 int main()
 {
-    createStudent();
+   testUniqueOwnership();
+
+    std::cout << "main continues\n";
 
     return 0;
 }
